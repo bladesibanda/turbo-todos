@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
 @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-200;
   }
-}
 
-*/
+  .mark-todo {
+    @apply items-center justify-center;
+    @apply px-3 py-2 rounded inline-flex;
+  }
+
+  .mark-incomplete {
+    @apply mark-todo;
+    @apply bg-neutral-50 text-neutral-500;
+  }
+
+  .mark-complete {
+    @apply mark-todo;
+    @apply bg-green-50 text-green-500;
+  }
+}
